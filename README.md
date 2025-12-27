@@ -37,7 +37,7 @@ com.leserviteurs.bliothequeGestion
 │
 ├── configuration     # Configuration Spring Security
 ├── controller        # Controllers REST
-├── entity            # Entités JPA
+├── model            # Entités JPA
 ├── repository        # Interfaces JPA Repository
 ├── service           # Logique métier
 └── BliothequeGestionApplication.java
@@ -97,17 +97,17 @@ Permet à un utilisateur existant de s’authentifier.
 ## 👥 Gestion des Personnes (CRUD)
 
 ### 📄 Lister toutes les personnes
-**GET** `/api/personnes`
+**GET** `/api/personnes/tous`
 
 ---
 
 ### 🔍 Obtenir une personne par ID
-**GET** `/api/personnes/{id}`
+**GET** `/api/personnes/trouver/{id}`
 
 ---
 
 ### ➕ Ajouter une personne
-**POST** `/api/personnes`
+**POST** `/api/personnes/ajouter`
 
 ```json
 {
@@ -119,12 +119,12 @@ Permet à un utilisateur existant de s’authentifier.
 ---
 
 ### ✏️ Modifier une personne
-**PUT** `/api/personnes/{id}`
+**PUT** `/api/personnes/mettreAJour/{id}`
 
 ---
 
 ### ❌ Supprimer une personne
-**DELETE** `/api/personnes/{id}`
+**DELETE** `/api/personnes/supprimer/{id}`
 
 ---
 
